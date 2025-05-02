@@ -1,0 +1,22 @@
+/* Add these at the top of your existing CSS */
+.scroll-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-page {
+  height: auto;
+  min-height: 100vh; /* Remove if conflicting */
+}
+
+/* Enhance existing anchor links */
+.nav-link {
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* Custom easing */
+}
+
+/* Optional: Parallax effect on sections */
+.hero {
+  transform: translateY(calc(var(--scroll-position, 0) * 0.3px));
+  transition: transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}

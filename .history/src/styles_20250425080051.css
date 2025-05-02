@@ -1,0 +1,32 @@
+/* Full height scrolling container */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Each full-page section */
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.section1 {
+  background: #1e3c72;
+  color: white;
+}
+
+.section2 {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.section3 {
+  background: #111;
+  color: #fff;
+}

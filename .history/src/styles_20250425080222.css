@@ -1,0 +1,27 @@
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; /* Still needed */
+  scroll-padding: 0;
+  overscroll-behavior-y: contain; /* Optional for smoother snap end */
+  /* ↓ Add smooth transition delay ↓ */
+  scroll-timeline: none;
+  scrollbar-width: none; /* optional to hide scrollbar */
+  -webkit-overflow-scrolling: touch; /* mobile smoothness */
+}
+
+/* This slows the 'feel' of the snap via momentum */
+html, body {
+  scroll-behavior: smooth;
+}
+
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: all 1.2s ease-out; /* Add transition for visual content, optional */
+}

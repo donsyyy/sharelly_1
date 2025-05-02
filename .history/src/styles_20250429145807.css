@@ -1,0 +1,170 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* Disable native scroll */
+  color: #333;
+}
+
+/* Section styles for full-screen snap scrolling */
+.section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 1s ease-in-out;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 80px; /* or whatever you want */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0px; /* some spacing left and right */
+  box-sizing: border-box;
+  border: 3px solid red;
+}
+
+.right-buttons {
+  display: flex;
+  gap: 10px; /* spacing between Sign In and Sign Up */
+}
+
+.button {
+  padding: 8px 16px;
+  color: #BCBCBC;
+  border: 1px solid #D7D7D7;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.logo-topleft {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.intro {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px 0px;
+}
+
+.intro-left {
+  max-width: 40%;
+}
+
+.intro-text {
+  font-size: 35px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.intro-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.button2 {
+  padding: 8px 16px;
+  color: #BCBCBC;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  
+}
+
+.intro-logo img {
+  width: 300px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero .brand {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.hero {
+  font-size: 1.5rem;
+  color: #4a5568;
+  opacity: 0.8;
+}
+
+/* Section content styles */
+.section-content {
+  max-width: 800px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #2d3748;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Scroll smoothing and hiding native scrollbar */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}

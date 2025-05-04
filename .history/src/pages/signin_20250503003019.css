@@ -1,0 +1,20 @@
+
+
+
+.fullscreen {
+    width: 100vw;    /* Viewport width */
+    height: 100vh;
+    display: flex;
+}
+
+
+.left-container {
+    background-color: blue;
+}
+
+.right-container {
+    background-color: red;
+}
+
+
+

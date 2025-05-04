@@ -1,0 +1,112 @@
+
+
+
+.fullscreen {
+    width: 100vw;    /* Viewport width */
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background: linear-gradient(to right,#E0D451,#30ED36, #fcec32,#05f00d);
+    background-size: 300% 100%;
+    transition: background-position 2s ease;
+}
+
+.fullscreen:hover {
+    background-position: 100% 0;  /* Shift gradient to the right */
+}
+
+.parent-container {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: ;
+    background-color: blue;
+}
+
+  
+
+
+
+
+
+/*
+.top-left p {
+    background: linear-gradient(to right,
+    #E0D451,
+    #30ED36,
+    #fcec32,
+    #05f00d 
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-position 3s ease;
+} */
+
+
+
+
+
+.right-container {
+    border: 2px solid white;
+    width: 50%;
+    display: inline;
+    justify-content: center;
+}
+
+.left-container {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttoon {
+    padding: 12px 35px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(to right,
+    #E0D451,  /* Start color 1 */
+    #30ED36,  /* Start color 2 */
+    #fcec32,  /* Hover color 1 */
+    #05f00d   /* Hover color 2 */
+    );
+    background-size: 300% 100%;
+    transition: all 1.2s ease;
+}
+
+.buttoon:hover {
+    transform: scale(1.4); /* smooth growth */
+    background-position: 100% 0;  /* Shift gradient to the right */
+  }
+
+

@@ -1,0 +1,36 @@
+
+
+
+.fullscreen {
+    width: 100vw;    /* Viewport width */
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.child {
+    height: 100%;            /* Full height of parent */
+    display: flex;
+    align-items: center;     /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+}
+  
+
+.left-container {
+    background-color: #60aed4;
+    width: 20%;
+}
+
+.left-container img {
+    width: 50px;
+    align-items: flex-start;
+    border: 2px solid red;
+}
+
+.right-container {
+    background-color: light red;
+    width: 80%;
+}
+
+
+

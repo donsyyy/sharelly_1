@@ -1,0 +1,16 @@
+
+
+
+.fullscreen {
+    width: 100vw;    /* Viewport width */
+    height: 100vh; 
+    border: 3px solid green;
+    padding: 0px;
+}
+
+.left-container {
+    
+}
+
+
+

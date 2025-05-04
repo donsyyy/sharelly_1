@@ -1,0 +1,296 @@
+
+input::placeholder {
+    color: inherit; /* Matches the input text color */
+    opacity: 1; /* Override Firefox's default opacity */
+}
+
+.fullscreen {
+    width: 100vw;    /* Viewport width */
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to right,#E0D451,#30ED36, #fcec32,#05f00d);
+    background-size: 300% 100%;
+    transition: background-position 2s ease;
+}
+
+.fullscreen:hover {
+    background-position: 100% 0;  /* Shift gradient to the right */
+}
+
+
+.parent-container {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    background-color: grey;
+    border-radius: 15px;
+}
+
+.child {
+    width: 100%;
+}
+
+.right-container {
+    border: 2px solid blue;
+    border-radius: 0px 14px 14px 0px;
+}
+
+.left-container {
+    border: 2px solid red;
+    border-radius: 14px 0px 0px 14px;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.divider-with-text {
+    position: relative;
+    margin: 20px 0;
+    width: 423px;
+    text-align: center;
+}
+.divider-with-text::before {
+    content: "";
+    position: absolute;
+    top: 57%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgb(197, 197, 197);
+    z-index: 1;
+}
+
+.divider-with-text span {
+    display: inline-block;
+    padding: 0 16px;
+    color: rgb(197, 197, 197);
+    background-color: grey;
+    position: relative;
+    z-index: 2;
+}
+
+.content-above-line, 
+.content-below-line {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.top-right h1 {
+    color: white;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.top-right h5 {
+    color: rgb(197, 197, 197);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.signin-link {
+    color: #30beed;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.info-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.first-last-name {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.email-password-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 0px;
+    gap: 10px;
+}
+
+.first-last-name input, .email-password-inputs input {
+    color: rgb(93, 93, 93);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right,
+    #E0D451,  /* Start color 1 */
+    #30ED36,  /* Start color 2 */
+    #fcec32,  /* Hover color 1 */
+    #05f00d   /* Hover color 2 */
+    );
+    background-size: 300% 100%;
+    transition: all 1.2s ease;
+}
+
+.first-last-name input {
+    width: 180px;
+}
+.email-password-inputs input{
+    width: 403.3px;
+}
+
+.first-last-name input:hover, .email-password-inputs input:hover {
+    background-position: 100% 0;
+}
+
+.terms-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.terms-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #30ED36;
+    cursor: pointer;
+}
+
+.terms-label {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.terms-link {
+    color: #30ED36;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.signup-button {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 403.3px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(to right,#E0D451,#30ED36,#fcec32,#05f00d);
+    background-size: 300% 100%;
+    transition: all 1.2s ease;
+}
+
+.signup-button:hover {
+    background-position: 100% 0;
+}
+
+.google-apple-button {
+    display: flex;
+    gap: 30px;
+    width: 420px;
+}
+
+.google-apple-button div {
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    padding-block: 8px;
+    width: 100%;
+}
+
+.google-apple-button img {
+    width: 19px;
+    height: 22px;
+}
+
+.google-apple-button h5 {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+
+/*
+.top-left p {
+    background: linear-gradient(to right,
+    #E0D451,
+    #30ED36,
+    #fcec32,
+    #05f00d 
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-position 3s ease;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttoon {
+    padding: 12px 35px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(to right,
+    #E0D451,  /* Start color 1 */
+    #30ED36,  /* Start color 2 */
+    #fcec32,  /* Hover color 1 */
+    #05f00d   /* Hover color 2 */
+    );
+    background-size: 300% 100%;
+    transition: all 1.2s ease;
+}
+
+.buttoon:hover {
+    transform: scale(1.4); /* smooth growth */
+    background-position: 100% 0;  /* Shift gradient to the right */
+  }
+
+

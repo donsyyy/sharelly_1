@@ -1,0 +1,12 @@
+
+
+
+.fullscreen {
+    width: 50vw;    /* Viewport width */
+  height: 100vh; 
+    border: 1px solid green;
+    padding: 2px;
+}
+
+
+

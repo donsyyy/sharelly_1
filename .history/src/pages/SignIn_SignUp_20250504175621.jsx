@@ -1,32 +1,12 @@
-import React, { useState, useEffect} from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useState} from 'react';
 import "./signin.css";
 
 
 const PageName = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const [isSwapped, setIsSwapped] = useState(location.pathname === '/login');
+  const [isSwapped, setIsSwapped] = useState(false);
   const handleClick = () => {
     setIsSwapped(!isSwapped);
   };
-
-  const handleToggle = () => {
-    if (isSwapped) {
-      navigate('/signup'); // Switch to sign up
-      setIsSwapped(false);
-    } else {
-      navigate('/signin'); // Switch to sign in
-      setIsSwapped(true);
-    }
-  };
-
-  useEffect(() => {
-    if (location.state && typeof location.state.showSignIn === 'boolean') {
-      setIsSwapped(location.state.showSignIn);
-    }
-  }, [location.state]);
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -51,7 +31,7 @@ const PageName = () => {
 
   return (
     <div className="fullscreen">
-      {!isSwapped ? (
+      {isSwapped ? (
       <>
         <div className="parent-container">
           <div className="child left-container">
@@ -65,7 +45,7 @@ const PageName = () => {
             <div className="top-right">
               <h1>Create an account</h1>
               <h5>Already have an account? {""}
-                <a href="#" onClick={handleToggle} className="signin-link">
+                <a href="#" onClick={handleClick} className="signin-link">
                   Sign In
                 </a></h5>
               <div className="info-inputs">
@@ -152,63 +132,8 @@ const PageName = () => {
         </>
         ) : (
         <>
-          <div style={{flexDirection: 'row-reverse'}} className="parent-container">
-            <div style={{ transform: 'rotate(180deg)',
-                          transformOrigin: 'center center', }} className="child left-container">
-              <div className="top-left">
-                <img src="./logo.png" />
-                <h1>SHARELY</h1>
-              </div>
-            </div>
-
-            <div className="child right-container">
-              <div className="top-right">
-                <h1>You again? 😐</h1>
-                <h5>Don't have an account yet? {""}
-                  <a href="#" onClick={handleToggle} className="signin-link">
-                    Sign Up
-                  </a></h5>
-                
-                  <div className="email-password-inputs">
-                    <input  type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            placeholder="Email"
-                            required
-                      />
-                    <input  type="password"
-                            id="password"
-                            name="password"
-                            value={formData.password}
-                            onChange={handleChange}
-                            placeholder="Password"
-                            required
-                      />
-                </div>
-
-                <div href="/signup-process" className="signup-button">
-                  Sign In
-                </div>
-                <div className="divider-with-text">
-                  <span>Or sign in with</span>
-                </div>
-                <div className="google-apple-button">
-                  <div href="/google-signup" className="google-button">
-                    <img src="/google-icon.png" />
-                    <h5>Google</h5>
-                  </div>
-                  <div href="/apple-signup" className="apple-button">
-                    <img src="/apple-icon.png" />
-                    <h5>Apple</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        egege
         </>
-      )}
     </div>
   );
 };

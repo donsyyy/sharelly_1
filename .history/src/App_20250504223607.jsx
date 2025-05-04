@@ -1,3 +1,4 @@
+// app.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage'; // Adjust the path if needed

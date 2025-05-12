@@ -1,0 +1,239 @@
+/* Base Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fixed Header Styles */
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: blue;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.header-left {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  width: 20%;
+}
+
+.header-center {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 80%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  outline: none;
+}
+
+.header-right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.profile-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6c757d;
+  background-image: url('https://via.placeholder.com/40');
+  background-size: cover;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+/* Left Column Styles */
+.left-column {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #e6f7ff;
+  border: 3px solid #FF5733;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-column.hidden {
+  display: none;
+}
+
+.left-content {
+  flex: 1;
+  overflow: auto;
+  padding: 5px;
+}
+
+/* Toggle Panel (inside left column) */
+.toggle-panel {
+  background-color: #337AFF;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+
+/* Toggle Button (small version when panel is hidden) */
+.toggle-button {
+  position: absolute;
+  left: 10px;
+  top: 80px; /* Below header */
+  width: 30px;
+  height: 30px;
+  background-color: #337AFF;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.toggle-button.visible {
+  display: flex;
+}
+
+/* Middle Column - expands when left is hidden */
+/* Previous styles remain the same until .middle-column */
+
+/* Middle Column Styles */
+.middle-column {
+  width: 60%;
+  height: 100%;
+  border: 3px solid #33FF57;
+  box-sizing: border-box;
+  transition: width 0.3s ease;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.middle-column.expanded {
+  width: 80%;
+}
+
+.folders-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.folder-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.folder-item:hover {
+  transform: scale(1.05);
+}
+
+.folder-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.folder-name {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.file-count {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Rest of the previous styles remain unchanged */
+
+.middle-column.expanded {
+  width: 80%;
+}
+
+/* Right Column - remains unchanged */
+.right-column {
+  width: 20%;
+  height: 100%;
+  border: 3px solid #337AFF;
+  box-sizing: border-box;
+}
+
+/* Left Column Parts */
+.left-part {
+  margin-bottom: 10px;
+}
+
+.part-header {
+  color: #333;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-section {
+  background-color: white;
+  padding: 4px 6px;
+  margin: 2px 0;
+  font-size: 11px;
+  border: 1px solid #eee;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}

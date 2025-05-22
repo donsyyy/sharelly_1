@@ -91,8 +91,8 @@ export default function App() {
                     <span className="sharing">Share Files Faster, Smarter, and Securely!</span>
                   </div>
                   <div className="intro-buttons">
-                    <div className="buttons">Get Started</div>
-                    <div className="buttons">Learn More</div>
+                    <div className="btn16">Get Started</div>
+                    <div className="btn16">Learn More</div>
                   </div>
                 </div>
                 <div className="intro-logo">

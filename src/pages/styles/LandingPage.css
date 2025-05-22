@@ -88,7 +88,7 @@ body {
 }
 
 .top-right-button:hover {
-  transform: scale(1.2); /* smooth growth */
+  transform: scale(1.1); /* smooth growth */
 }
 
 
@@ -154,7 +154,7 @@ body {
   gap: 30px;
 }
 
-.buttons {
+.btn16 {
   padding: 12px 35px;
   color: white;
   border-radius: 12px;
@@ -172,8 +172,8 @@ body {
   transition: all 1.2s ease;
 }
 
-.buttons:hover {
-  transform: scale(1.2); /* smooth growth */
+.btn16:hover {
+  transform: scale(1.15); /* smooth growth */
   background-position: 100% 0;  /* Shift gradient to the right */
 }
 

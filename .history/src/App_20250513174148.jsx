@@ -14,6 +14,7 @@ function App() {
         <Route path="/signin" element={<SigningPage />} />
         <Route path="/forgotpasswd" element={<ForgotPasswd />} />
         <Route path="/otp" element={<OTP />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         
         {/* Add other routes here */}
       </Routes>

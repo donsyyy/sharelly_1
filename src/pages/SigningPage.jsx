@@ -54,10 +54,9 @@ const PageName = () => {
     // Add your form submission logic here
   };
 
-  const emailIsValid = formData.email
   const inputsNotBlank = formData.firstName && formData.lastName && formData.email;
   const passwordsMatch = formData.password && formData.retyped && (formData.password === formData.retyped);
-  const canSignup = passwordsMatch && emailIsValid && inputsNotBlank && isChecked;
+  const canSignup = passwordsMatch && inputsNotBlank && isChecked;
   const canSignin = formData.email && formData.password;
   return (
     <div className="fullscreen">
@@ -70,7 +69,7 @@ const PageName = () => {
                 <h1>SHARELY</h1>
               </div>
             </div>
-
+            
             <div className="child right-container">
               <div className="top-right">
                 <h1>Create an account</h1>

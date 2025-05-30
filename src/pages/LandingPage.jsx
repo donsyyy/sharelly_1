@@ -4,11 +4,13 @@ import "./styles/LandingPage.css";
 
 export default function App() {
   const navigate = useNavigate();
+  const goToWebsite = () => { navigate("/signin") }
+
   const goToSignIn = () => {
     navigate('/signin', { state: { showSignIn: true } });
   };
   const goToSignUp = () => {
-    navigate('/signup', { state: { showSignIn: false } });
+    navigate('/signup', { state: { showSignIn: false }   });
   };
 
 
@@ -176,7 +178,7 @@ export default function App() {
               </div>
 
               <div className="icons4">
-                <div id='createaccbutton' className="buttons" onClick={goToSignUp}>Create Your Account Now!</div>
+                <div id='createaccbutton' className="btn16" onClick={goToSignUp}>Create Your Account Now!</div>
               </div>
             </div>
           ),
@@ -214,10 +216,10 @@ export default function App() {
               </div>
               <div className="footer5">
                 <div className="socials-icons">
-                  <img src="/facebook-icon.png" />
-                  <img src="/instagram-icon.png" />
-                  <img src="/twitter-icon.png" />
-                  <img src="/mail-icon.png" />
+                  <img src="/facebook-icon.png" onClick={goToWebsite} />
+                  <img src="/instagram-icon.png" onClick={goToWebsite} />
+                  <img src="/twitter-icon.png" onClick={goToWebsite} />
+                  <img src="/mail-icon.png" onClick={goToWebsite} />
                 </div>
                 <div className="copyright-info">
                   <h4>Copyright 2021 Gaslur</h4>
